@@ -1,0 +1,19 @@
+{
+  "name": "smm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "browser-sync": "^2.18.13",
+    "gulp-less": "^3.3.2",
+    "less-plugin-autoprefix": "^1.5.1",
+    "gulp-autoprefixer": "^4.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Den",
+  "license": "ISC"
+}

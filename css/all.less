@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700');
+@import '_mixin.less';
+a {
+  color: inherit;
+  vertical-align: middle;
+}
+body {
+  // background: #14357a;
+  background: rgb(15,43,93) no-repeat;
+  background: -moz-linear-gradient(top, rgba(15,43,93,1) 0%, rgba(20,53,122,1) 25%, rgba(20,53,122,1) 50%, rgba(20,53,122,1) 75%, rgba(20,53,122,1) 100%) no-repeat;
+  background: -webkit-linear-gradient(top, rgba(15,43,93,1) 0%,rgba(20,53,122,1) 25%,rgba(20,53,122,1) 50%,rgba(20,53,122,1) 75%,rgba(20,53,122,1) 100%) no-repeat;
+  background: linear-gradient(to bottom, rgba(15,43,93,1) 0%,rgba(20,53,122,1) 25%,rgba(20,53,122,1) 50%,rgba(20,53,122,1) 75%,rgba(20,53,122,1) 100%) no-repeat;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f2b5d', endColorstr='#14357a',GradientType=0 );
+  font: 1em/1.4 'Open Sans', sans-serif;
+  color: #2eb3ec;
+  height: 100%;
+
+}
+.page-content {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.logo, .header-top form, .top-nav  {display: inline-block;}
+.logo img {
+  max-width: 163px;
+}
+.header-top {
+  border-top: 1px solid #091a3f;
+  border-bottom: 1px solid #091a3f;
+  padding: 35px 0 45px;
+  background: rgb(15,43,93);
+  background: -moz-linear-gradient(left, rgba(15,43,93,1) 0%, rgba(20,53,122,1) 25%, rgba(20,53,122,1) 50%, rgba(20,53,122,1) 75%, rgba(20,53,122,1) 100%);
+  background: -webkit-linear-gradient(left, rgba(15,43,93,1) 0%,rgba(20,53,122,1) 25%,rgba(20,53,122,1) 50%,rgba(20,53,122,1) 75%,rgba(20,53,122,1) 100%);
+  background: linear-gradient(to right, rgba(15,43,93,1) 0%,rgba(20,53,122,1) 25%,rgba(20,53,122,1) 50%,rgba(20,53,122,1) 75%,rgba(20,53,122,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f2b5d', endColorstr='#14357a',GradientType=1 );
+  .favorite, .login {
+    width: 30px;
+    height: 25px;
+    display: inline-block;
+  }
+  .login {background: url(/images/logout.png) no-repeat center;}
+  .favorite {background: url(/images/favorite.png) no-repeat center;}
+  & > .page-content {padding: 0 5px 0 10px;}
+
+}
+.top-nav {
+  margin: 0 15px;
+  a {
+    color: #fffefb;
+    text-transform: uppercase;
+    transition: .3s;
+    margin: 0 15px;
+    .condensed;
+      &:hover {
+        color: inherit;
+        transition: .3s;
+      }
+    }
+}
+.header-top li {display: inline-block;}
+.header-top-search {
+  max-width: 262px;
+  width: 100%;
+  position: relative;
+  margin: 0 15px;
+}
+.header-top .logo {
+  vertical-align: middle;
+}
+.top-nav {
+  vertical-align: bottom;
+  margin-right: 15px;
+}
+.header-top-search input {
+  background: transparent;
+  border: 1px #2eb3ec solid;
+  padding: 7px 32px 6px 15px;
+  width: 100%;
+  color: #fff;
+  &::placeholder {
+    color: #2eb3ec;
+  }
+}
+.header-top-search button {
+  width: 32px;
+  height: 28px;
+  background: url('/images/search.png') no-repeat center;
+  border: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.set-day {
+  width: 67px;
+  height: 32px;
+  background: url(/images/day-night.png) no-repeat 90% center;
+  border: none;
+  vertical-align: bottom;
+  margin: 0 15px;
+  outline: none;
+}
+.user-info {
+  display: -webkit-inline-flex;
+  display: -ms-inline-flex;
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+  max-width: 180px;
+  margin: 0 15px;
+}
+.user-info_img {
+  max-width: 30px;
+}
+.user-info_name {
+  font-size: 14px;
+  padding-left: 10px;
+}
+
+.header-main {
+  min-height: 138px;
+  padding: 25px 0;
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(to bottom, rgba(15,43,93,1) 0%,rgba(20,49,116,1) 25%,rgba(22,53,124,1) 50%,rgba(21,54,124,1) 75%,rgba(17,46,107,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f2b5d', endColorstr='#112e6b',GradientType=0 );
+  overflow: hidden;
+  &:before {
+    background: url(/images/groupe-bg.png);
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    z-index: -1;
+  }
+}
+.groupe-view {
+  width: 33.3%;
+  & .check-w img {max-width: 27px;}
+  .roupe-view_img {
+    max-width: 86px;
+  }
+}
+.groupe-data {
+  width: 57.7%;
+}
