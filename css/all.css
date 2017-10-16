@@ -141,6 +141,8 @@ body {
 .header-main:before {
   background: url(/images/groupe-bg.png);
   background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
   content: "";
   position: absolute;
   top: 0;
@@ -459,4 +461,30 @@ body {
     text-align: center;
   }
   .header-top-right {margin-top: 15px;}
+}
+/*media*/
+@media all and (max-width: 992px) {
+  .check-w {margin-right: 15px;}
+  .groupe-data {margin-left: 0; max-width: 450px; float: right;}
+  .groupe-data ul {flex-wrap: wrap;}
+  .groupe-data_item {width: 50%;}
+  .groupe-data_item span {text-align: left; margin-left: 0;}
+}
+@media all and (max-width: 690px) {
+  .header-top-search {margin-top: 15px;}
+}
+@media all and (max-width: 640px) {
+  .groupe-view {width: auto; margin-bottom: 25px;}
+  .header-main > .page-content {
+    text-align: center;
+  }
+  .groupe-data {float: none; width: 100%; max-width: 500px;}
+  .groupe-data_item li {width: 100%;}
+  .groupe-data_item span {text-align: center;}
+  .groupe-data .groupe-data_rss {margin: 0 auto;}
+}
+@media all and (max-width: 480px) {
+  .set-day, .user-info {margin: 0;}
+  .set-day {width: 42px;}
+  .top-nav {margin-top: 15px;}
 }
