@@ -17,16 +17,16 @@ gulp.task('browser-sync', function() {
 		// files: "css/all.css"
 	});
   gulp.watch("*.html").on('change', browserSync.reload);
-  gulp.watch("css/*.less", ['less']).on('change', browserSync.reload);
+  gulp.watch("css/*.css").on('change', browserSync.reload);
 });
 
 // compile and prefix
-gulp.task('less', function () {
-return gulp.src('./css/*.less')
-  // .pipe(less({
-	// plugins: [autoprefix]
-  // }))
-  .pipe(gulp.dest('./css'));
-});
+// gulp.task('less', function () {
+// return gulp.src('./css/*.less')
+//   // .pipe(less({
+// 	// plugins: [autoprefix]
+//   // }))
+//   .pipe(gulp.dest('./css'));
+// });
 
-gulp.task('default', ['browser-sync', 'less']);
+gulp.task('default', ['browser-sync']);
