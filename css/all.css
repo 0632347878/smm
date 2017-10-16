@@ -39,10 +39,10 @@ body {
   display: inline-block;
 }
 .header-top .login {
-  background: url(/images/logout.png) no-repeat center;
+  background: url(../images/logout.png) no-repeat center;
 }
 .header-top .favorite {
-  background: url(/images/favorite.png) no-repeat center;
+  background: url(../images/favorite.png) no-repeat center;
 }
 .header-top > .page-content {
   padding: 0 5px 0 10px;
@@ -97,7 +97,7 @@ body {
 .header-top-search button {
   width: 32px;
   height: 28px;
-  background: url('/images/search.png') no-repeat center;
+  background: url('../images/search.png') no-repeat center;
   border: none;
   position: absolute;
   top: 0;
@@ -106,7 +106,7 @@ body {
 .set-day {
   width: 67px;
   height: 32px;
-  background: url(/images/day-night.png) no-repeat 90% center;
+  background: url(../images/day-night.png) no-repeat 90% center;
   border: none;
   vertical-align: bottom;
   margin: 0 15px;
@@ -139,7 +139,7 @@ body {
   overflow: hidden;
 }
 .header-main:before {
-  background: url(/images/groupe-bg.png);
+  background: url(../images/groupe-bg.png);
   background-position: center;
   -webkit-background-size: cover;
   background-size: cover;
@@ -194,7 +194,7 @@ body {
    - ms - user - select: none;
 }
 .check-w input[type = "checkbox"]:checked  + label {
-  background: url(/images/checkbox-enable.png) no-repeat;
+  background: url(../images/checkbox-enable.png) no-repeat;
 
 }
 .groupe-view > img {
@@ -203,7 +203,7 @@ body {
   border-radius: 50%;
 }
 .check-w label {
-  background: url(/images/checkbox-disable.png) no-repeat;
+  background: url(../images/checkbox-disable.png) no-repeat;
   background-position: center;
   width: 30px;
   height: 30px;
@@ -243,7 +243,7 @@ body {
 .groupe-data_rss {
   width: 16px;
   height: 16px;
-  background: url(/images/rss.png);
+  background: url(../images/rss.png);
   display: inline-block;
   margin: 0 auto;
 }
