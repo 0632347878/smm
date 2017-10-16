@@ -462,6 +462,18 @@ body {
   }
   .header-top-right {margin-top: 15px;}
 }
+.main {
+  min-height: 800px;
+  background: rgb(18,51,117);
+  background: -moz-linear-gradient(top, rgba(18,51,117,1) 0%, rgba(12,46,104,1) 40%, rgba(5,41,89,1) 70%, rgba(2,39,83,1) 100%);
+  background: -webkit-linear-gradient(top, rgba(18,51,117,1) 0%,rgba(12,46,104,1) 40%,rgba(5,41,89,1) 70%,rgba(2,39,83,1) 100%);
+  background: linear-gradient(to bottom, rgba(18,51,117,1) 0%,rgba(12,46,104,1) 40%,rgba(5,41,89,1) 70%,rgba(2,39,83,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#123375', endColorstr='#022753',GradientType=0 );
+}
+.statistic-widget {
+  width: 50%;
+  float: right;
+}
 /*media*/
 @media all and (max-width: 992px) {
   .check-w {margin-right: 15px;}
